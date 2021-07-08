@@ -26,7 +26,7 @@ const ShareBalance = props => {
     } else {
       let tx = {
         to: address.trim(),
-        value: balance,
+        value: value,
       };
       await wallet
         .sendTransaction(tx)
